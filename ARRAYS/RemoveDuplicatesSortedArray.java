@@ -1,4 +1,3 @@
-package ARRAYS;
 import java.util.ArrayList;
 class RemoveDuplicatesSortedArray {
     static ArrayList<Integer> removeDuplicates(int[] arr) {

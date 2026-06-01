@@ -1,4 +1,3 @@
-package ARRAYS;
 class SecondLargestElement {
     static int getSecondLargest(int[] arr) {
         int n = arr.length;
