@@ -1,18 +1,20 @@
 import java.util.ArrayList;
-class RemoveDuplicatesSortedArray {
+import java.util.HashSet;
+class RemoveDuplicatesHashSet {
     static ArrayList<Integer> removeDuplicates(int[] arr) {
         ArrayList<Integer> result = new ArrayList<>();
-        if (arr.length == 0) return result;
-        result.add(arr[0]);
-        for (int i = 1; i <arr.length; i++) {
-            if (arr[i] != arr[i - 1]) {
-                result.add(arr[i]);
+        HashSet<Integer> seen = new HashSet<>();
+        
+        for(int num : arr){
+            if(!seen.contains(num)){
+                seen.add(num);
+                result.add(num);
             }
         }
         return result;
     }
     public static void main(String[] args) {
-    int[] arr = {1, 2, 2, 3, 4, 4, 4, 5, 5};
+    int[] arr = {1, 2, 2, 3, 1, 4, 3, 5, 5, 4, 2};
         for (Integer num : removeDuplicates(arr)) {
             System.out.print(num + " ");
         }
