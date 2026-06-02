@@ -17,5 +17,15 @@ class RemoveDuplicates {
         for (Integer num : removeDuplicates(arr)) {
             System.out.print(num + " ");
         }
+        // you used Integer, not int, because:
+        // ArrayList can only store objects, not primitives
+        // int is a primitive type
+        // Integer is the wrapper class for int
+        // ✅ Best practice here
+        // Both are fine:
+        // for (Integer num : list)
+        // or
+        // for (int num : list)
+        // Java will handle conversion automatically.
     }
 }
