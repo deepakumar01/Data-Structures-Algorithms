@@ -1,5 +1,5 @@
 package ARRAYS;
-class SecondLargestElement {
+class SecondLargest {
     static int getSecondLargest(int[] arr) {
         int n = arr.length;
         int largest = -1, secondLargest = -1;
