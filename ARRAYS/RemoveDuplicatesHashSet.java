@@ -4,11 +4,11 @@ import java.util.HashSet;
 class RemoveDuplicatesHashSet {
     static ArrayList<Integer> removeDuplicates(int[] arr) {
         ArrayList<Integer> result = new ArrayList<>();
-        HashSet<Integer> seen = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
         
         for(int num : arr){
-            if(!seen.contains(num)){
-                seen.add(num);
+            if(!set.contains(num)){
+                set.add(num);
                 result.add(num);
             }
         }
