@@ -1,7 +1,6 @@
 package ARRAYS; 
 import java.util.*;
 class AlternatePositiveNegative {
-
     static void rearrange(ArrayList<Integer> arr) {
         ArrayList<Integer> pos = new ArrayList<>();
         ArrayList<Integer> neg = new ArrayList<>();
