@@ -50,6 +50,48 @@ class MissingAndRepeating {
         // list.add(missing);
         // return list;
 
+        // Multiplying By -1
+        // ArrayList<Integer> list = new ArrayList<>();
+        // int n = arr.length;
+        // int repeating = -1;
+        // int missing = -1;
+        // for (int i = 0; i < n; i++) {
+        //     int idx = Math.abs(arr[i]) - 1;
+        //     if (arr[idx] < 0) {
+        //         repeating = Math.abs(arr[i]);
+        //     } else {
+        //         arr[idx] *= -1;
+        //     }
+        // }
+        // for (int i = 0; i < n; i++) {
+        //     if (arr[i] > 0) {
+        //         missing = i + 1;
+        //         break;
+        //     }
+        // }
+        // list.add(repeating);
+        // list.add(missing);
+        // return list;
+
+        // By Math Equations
+        // ArrayList<Integer> list = new ArrayList<>();
+        // int n = arr.length;
+        // long sumOfNatural = (long)n * (n + 1) / 2;
+        // long sumOfSqNatural = (long)n * (n + 1) * (2 * n + 1) / 6;
+        // long sumOfArr = 0;
+        // long sumOfSqArr = 0;
+        // for (int i = 0; i < n; i++) {
+        //     sumOfArr += arr[i];
+        //     sumOfSqArr += (long)arr[i] * arr[i];
+        // }
+        // long val1 = sumOfArr - sumOfNatural;      // x - y
+        // long val2 = sumOfSqArr - sumOfSqNatural;  // x² - y²
+        // long sum = val2 / val1;                   // x + y
+        // int x = (int)((val1 + sum) / 2);          // repeating
+        // int y = (int)(x - val1);                  // missing
+        // list.add(x);
+        // list.add(y);
+        // return list;
         
     }
 
