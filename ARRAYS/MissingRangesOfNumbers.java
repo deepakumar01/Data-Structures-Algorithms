@@ -8,18 +8,14 @@ class MissingRangesOfNumbers {
             if (num < next) {
                 continue;
             }
-
             if (num > upper) {
                 break;
             }
-
             if (next < num) {
                 result.add(Arrays.asList((int) next, num - 1));
             }
-
             next = (long) num + 1;
         }
-
         if (next <= upper) {
             result.add(Arrays.asList((int) next, upper));
         }
