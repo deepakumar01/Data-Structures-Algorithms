@@ -22,10 +22,8 @@ class NextPermutation {
             return ;
         }
 
-        
         // Find the element from the right 
         // that is greater than pivot
-        
         for (int i = n - 1; i > pivot; i--) {
             if (arr[i] > arr[pivot]) {
                 swap(arr, i, pivot);
