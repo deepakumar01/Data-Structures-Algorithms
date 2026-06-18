@@ -12,7 +12,6 @@ public class StockBuySell1 {
             profit = Math.max(profit, cost);
             mini = Math.min(mini, prices[i]);
         }
-
         return profit;
     }
 

@@ -10,6 +10,13 @@ class WaveArray {
             arr[r] = temp;
         }
 
+        //OR
+        for(int i=1;i<arr.length;i=i+2){
+            int temp = arr[i-1];
+            arr[i-1] = arr[i];
+            arr[i] = temp;
+        }
+        
         // OR
         for (int i=0; i<n-1; i += 2){
             int temp = arr[i];

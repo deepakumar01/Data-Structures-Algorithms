@@ -1,5 +1,4 @@
 package ARRAYS;
-
 class ThirdLargest {
     static int thirdLargest(int[] arr) {
         int n = arr.length;
