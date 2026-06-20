@@ -1,6 +1,5 @@
 package ARRAYS;
 class ReverseArray {
-
     static void reverseArray(int arr[]) {
         int n = arr.length;
         int l = 0, r = n-1;
