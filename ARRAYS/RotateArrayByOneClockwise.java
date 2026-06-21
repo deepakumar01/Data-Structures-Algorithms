@@ -1,5 +1,4 @@
 package ARRAYS;
-
 public class RotateArrayByOneClockwise {
     static void rotate(int[] arr){
         int n = arr.length;
