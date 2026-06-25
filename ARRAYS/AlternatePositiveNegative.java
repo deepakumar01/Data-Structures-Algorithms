@@ -14,11 +14,6 @@ class AlternatePositiveNegative {
         while(posIdx<pos.size() && negIdx<neg.size()){
             arr.set(i++, pos.get(posIdx++));
             arr.set(i++, neg.get(negIdx++));
-
-            // OR
-            // arr.set(2*i, pos.get(posIdx++));
-            // arr.set(2*i+1, neg.get(negIdx++));
-            // i++;
         }
         // Filling rest of elements
         while(posIdx<pos.size()) arr.set(i++, pos.get(posIdx++));

@@ -1,5 +1,4 @@
 package ARRAYS;
-import java.util.Vector;
 class AddingOneToArray {
     static int[] addOne(int[] arr) {
         int n = arr.length;

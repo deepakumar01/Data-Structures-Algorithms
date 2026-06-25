@@ -4,6 +4,7 @@ class RemoveDuplicates {
     static ArrayList<Integer> removeDuplicates(int[] arr) {
         ArrayList<Integer> result = new ArrayList<>();
         if (arr.length == 0) return result;
+        //To avoid error index 0 out of bound for result.add(arr[0]);
         result.add(arr[0]);
         for (int i = 1; i <arr.length; i++) {
             if (arr[i] != arr[i - 1]) {

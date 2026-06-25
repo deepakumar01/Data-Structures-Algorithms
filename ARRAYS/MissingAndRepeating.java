@@ -37,7 +37,6 @@ class MissingAndRepeating {
         // for(int i=0;i<n;i++){
         //     freq[arr[i]]++;
         // }
-        
         // for(int i=1;i<=n;i++){
         //     if(freq[i]==0) missing = i;
         //     else if(freq[i]==2)  repeating = i;
@@ -84,11 +83,11 @@ class MissingAndRepeating {
         //     sumOfArr += arr[i];
         //     sumOfSqArr += (long)arr[i] * arr[i];
         // }
-        // long val1 = sumOfArr - sumOfNatural;      // x - y
-        // long val2 = sumOfSqArr - sumOfSqNatural;  // x² - y²
-        // long sum = val2 / val1;                   // x + y
-        // int x = (int)((val1 + sum) / 2);          // repeating
-        // int y = (int)(x - val1);                  // missing
+        // long SimpleDiff = sumOfArr - sumOfNatural;      // x - y
+        // long SqDiff = sumOfSqArr - sumOfSqNatural;      // x² - y²
+        // long xplusy = SqDiff / SimpleDiff;              // x + y
+        // int x = (int)((SimpleDiff + xplusy) / 2);          // repeating
+        // int y = (int)(x - SimpleDiff);                  // missing
         // list.add(x);
         // list.add(y);
         // return list;
