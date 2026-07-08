@@ -1,7 +1,4 @@
 package ARRAYS;
-
-import java.util.Arrays;
-
 public class ArraySorted {
     static boolean isSorted(int arr[]) {
         int n = arr.length;
