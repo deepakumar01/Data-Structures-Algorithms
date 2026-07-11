@@ -1,5 +1,5 @@
 package ARRAYS;
-public class RotateArray {
+public class RotateArrayLeft {
     static void reverse(int[] arr, int a, int b){
         while(a<b){
             int temp = arr[a];
@@ -8,12 +8,20 @@ public class RotateArray {
             a++;b--;
         }
     }
-    static void rotateArr(int[] arr, int d) {
+    static void rotateArr(int[] arr, int k) {
         int n = arr.length;
-        d=d%n;
-        reverse(arr,0,d-1);
-        reverse(arr,d,n-1);
+        k=k%n;
+        reverse(arr,0,k-1);
+        reverse(arr,k,n-1);
         reverse(arr,0,n-1);
+
+        //Using formula (i+k)%n
+        // int[] temp = nums.clone();
+        // int n = nums.length;
+        // k = k%n;
+        // for(int i=0;i<n;i++){
+        //     nums[i] = temp[(i+k)%n];
+        // }
 
         //My approach using ArrayList
         // ArrayList<Integer> list = new ArrayList<>();
@@ -30,24 +38,13 @@ public class RotateArray {
         // for (int i = 0; i < n; i++) {
         //     arr[i] = list.get(i);
         // }
-
-        //Using temporary Array
-        // int n = arr.length;
-        // d = d % n;
-        // int[] temp = new int[n];
-        // for (int i = 0; i < n; i++) {
-        //     temp[i] = arr[(i + d) % n];
-        // }
-        // for (int i = 0; i < n; i++) {
-        //     arr[i] = temp[i];
-        // }
     }
 
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5, 6 };
-        int d = 2;
+        int k = 2;
 
-        rotateArr(arr, d);
+        rotateArr(arr, k);
 
         for (int i = 0; i < arr.length; i++)
             System.out.print(arr[i] + " ");
