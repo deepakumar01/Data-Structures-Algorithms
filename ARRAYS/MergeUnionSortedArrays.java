@@ -5,7 +5,7 @@ import java.util.ArrayList;
 // import java.util.Collections;
 // import java.util.HashSet;
 // import java.util.HashMap;
-public class MergeSortedArraysExtraSpaces {
+public class MergeUnionSortedArrays {
     public static ArrayList<Integer> findUnion(int[] a, int[] b) {
         int n1 = a.length;
         int n2 = b.length;
