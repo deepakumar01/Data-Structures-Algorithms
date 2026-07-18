@@ -1,4 +1,4 @@
-package ARRAYS;
+package ARRAYS2;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.PriorityQueue;

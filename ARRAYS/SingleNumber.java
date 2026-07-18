@@ -1,5 +1,8 @@
 package ARRAYS;
-//import java.util.HashMap;
+
+// import java.util.HashMap;
+// import java.util.Map;
+
 public class SingleNumber {
     public static int singleNumber(int[] nums) {
 
@@ -19,6 +22,16 @@ public class SingleNumber {
         //     if(map.get(num)==1){
         //         return num;
         //     }
+        // }
+        // return -1;
+
+        // Using HashMap my approach
+        // HashMap<Integer, Integer> map = new HashMap<>();
+        // for(int num:nums){
+        //     map.put(num, map.getOrDefault(num,0)+1);
+        // }
+        // for(Map.Entry<Integer,Integer> e:map.entrySet()){
+        //     if(e.getValue()==1) return e.getKey();
         // }
         // return -1;
 

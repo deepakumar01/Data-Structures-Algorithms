@@ -1,4 +1,4 @@
-package ARRAYS;
+package ARRAYS2;
 
 class NextPermutation {
 
