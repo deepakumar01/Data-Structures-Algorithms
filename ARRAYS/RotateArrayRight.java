@@ -14,6 +14,7 @@ public class RotateArrayRight {
         reverse(arr,0,n-k-1);
         reverse(arr,n-k,n-1);
         reverse(arr,0,n-1);
+        
     //Using formula (i+k)%n
     // int[] temp = nums.clone();
     //     int n = nums.length;
