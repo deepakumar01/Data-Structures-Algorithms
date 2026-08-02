@@ -1,7 +1,6 @@
 package ARRAYS;
 
 import java.util.Arrays;
-
 public class MergeSortedArraysWithoutExtraSpace {
     public void mergeArrays(int[] a, int[] b) {
         int m = a.length;

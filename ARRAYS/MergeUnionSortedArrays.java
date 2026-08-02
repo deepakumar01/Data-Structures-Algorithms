@@ -13,7 +13,7 @@ public class MergeUnionSortedArrays {
         int i=0;
         int j=0;
         while(i<n1 && j<n2){
-            if(a[i]<b[j]){
+            if(a[i]<=b[j]){
                 if(list.size()==0 || list.get(list.size()-1)!=a[i]){
                     list.add(a[i]);
                 }
@@ -82,7 +82,7 @@ public class MergeUnionSortedArrays {
         // Collections.sort(list);
         // return list;
 
-        // Detailed conditional comparison for both arrays
+        // Detailed if else conditional comparison for both arrays
         // ArrayList<Integer> list = new ArrayList<>();
         // int n = a.length;
         // int m = b.length;
