@@ -1,6 +1,6 @@
 package ARRAYS;
 import java.util.Arrays;
-public class MergeSortedArraysNums1 {
+public class MergeSortedArray {
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         int left = m - 1;
@@ -63,7 +63,7 @@ public class MergeSortedArraysNums1 {
         //     nums1[i] = temp[i];
         // }
         // // if you need to put elements in nums1 and nums2 separately
-        // for(int i=0;i<m+n;i++){
+        // for(int i=0;i<m+n; i++){
         //     if(i<m) nums1[i] = nums3[i];
         //     else nums2[i-m] = nums3[i];
         // }
